@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Certificados da SkillSoft</title>
+        <link href="src/images/favicon-32x32.png" rel="icon"/>
+        <link href="src/css/style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+
+        <!-- Cabeçalho Fixo -->
+        <header>
+            <img alt="Logo Udemy" src="src/images/skillsoft-logo.png"/>
+            <h1>Certificados da SkillSoft</h1>
+        </header>
+
+        <div class="container">
+
+            <!-- Certificado 1 de 2025-->
+            <div class="certificate">
+                <div class="certificate-header" onclick="toggleCertificate(this)">
+                    <i><img alt="Logo SkillSoft" src="src/images/skillsoft-logo.png" width="50"/></i>
+                    <span class="certificate-title">AI in Industry</span>
+                </div>
+                <div class="certificate-content">
+                    <p>Status: Aprovado</p>
+                    <p>Data de Conclusão: 13/02/2025</p>
+                    <div class="file-links">
+                        <a href="src/certificados/AI in Industry.pdf" target="_blank">Visualizar PDF</a>
+                    </div>
+                </div>
+            </div>           
+            
+            <!-- Certificado 2 de 2025-->
+            <div class="certificate">
+                <div class="certificate-header" onclick="toggleCertificate(this)">
+                    <i><img alt="Logo SkillSoft" src="src/images/skillsoft-logo.png" width="50"/></i>
+                    <span class="certificate-title">Applying AI to Robotics</span>
+                </div>
+                <div class="certificate-content">
+                    <p>Status: Aprovado</p>
+                    <p>Data de Conclusão: 14/04/2025</p>
+                    <div class="file-links">
+                        <a href="src/certificados/Applying AI to Robotics.pdf" target="_blank">Visualizar PDF</a>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- Certificado 3 de 2025-->
+            <div class="certificate">
+                <div class="certificate-header" onclick="toggleCertificate(this)">
+                    <i><img alt="Logo SkillSoft" src="src/images/skillsoft-logo.png" width="50"/></i>
+                    <span class="certificate-title">Azure Fundamentals_ Azure Data Privacy</span>
+                </div>
+                <div class="certificate-content">
+                    <p>Status: Aprovado</p>
+                    <p>Data de Conclusão: 03/04/2025</p>
+                    <div class="file-links">
+                        <a href="src/certificados/Azure Fundamentals_ Azure Data Privacy.pdf" target="_blank">Visualizar PDF</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certificado 4 de 2025-->
+            <div class="certificate">
+                <div class="certificate-header" onclick="toggleCertificate(this)">
+                    <i><img alt="Logo SkillSoft" src="src/images/skillsoft-logo.png" width="50"/></i>
+                    <span class="certificate-title">Smart AI in Product Management</span>
+                </div>
+                <div class="certificate-content">
+                    <p>Status: Aprovado</p>
+                    <p>Data de Conclusão: 03/04/2025</p>
+                    <div class="file-links">
+                        <a href="src/certificados/Smart AI in Product Management.pdf" target="_blank">Visualizar PDF</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Abrindo e fechando a aba -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const headers = document.querySelectorAll('.certificate-header');
+                headers.forEach(header => {
+                    header.addEventListener('click', () => {
+                        const content = header.nextElementSibling;
+                        content.classList.toggle('open');
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
